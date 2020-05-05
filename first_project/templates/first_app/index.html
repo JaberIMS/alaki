@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{%load static%}
+<!-- in order to load the static files, we add the follwing line to the beginning of html file
+the location of this line is immediately after <!DOCTYPE html>  -->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static "css/my_style.css"%}">
+    <title>First app Django</title>
+  </head>
+  <body>
+    <h1>Hello! This is index.html</h1>
+
+    <!-- the next line used to be used for template tagging and using views -->
+    <!-- {{insert_me123}} -->
+    <img src="{% static "images/logo.jpg"%}" alt="Image not found">
+
+  </body>
+</html>
